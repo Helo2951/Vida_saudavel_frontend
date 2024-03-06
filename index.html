@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Vida Saudável</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <main class="row">
+
+      <div class="col-lg">
+
+        <div class="initialText">
+          <h1>Iniciativa Saúde da Cidade</h1>
+          <p>Texto sobre vida saudável: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aut error odio
+            distinctio et laudantium tenetur dolor quisquam dicta temporibus officia, a minus veniam unde, facilis nisi
+            corrupti, rerum quo!</p>
+          <p>Texto sobre vida iniciativa: Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni eius ea
+            explicabo illum vero commodi excepturi distinctio alias obcaecati? Accusamus nam magnam eveniet laudantium
+            dolore
+            non assumenda libero harum.</p>
+
+        </div>
+
+        <div class="jumbotron">
+          <h1>Fique em contato!</h1>
+          <h3>Nos mande uma mensagem e fique por dentro de nossos eventos.</h3>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nome</label>
+            <input type="text" class="form-control form-control-lg" id="name" placeholder="Digite seu nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Email</label>
+            <input type="text" class="form-control  form-control-lg" id="email" placeholder="Digite seu email" required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensagem (Opcional)</label>
+            <textarea class="form-control  form-control-lg" id="message" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg" id="sendButton">Enviar</button>
+        </div>
+      </div>
+
+      <div class="col-lg secondCol">
+        <img src="/frontend/images/Saúde mental.png" alt="Foto Campanha Saúde Mental" id="mainPhoto" class="img-fluid">
+
+
+        <div class="icones">
+          <div class="buttons">
+            <button type="button" id="calendarButton" data-toggle="modal" data-target="#modalOne">
+              <img src="/frontend/images/calendar_14286343.png" alt="Ícone de calendário" class="img-fluid icones">
+            </button>
+            <label for="calendarButton">Agenda de eventos</label>
+          </div>
+
+          <div class="buttons">
+            <button type="button" id="meditationButton" data-toggle="modal" data-target="#modalTwo">
+              <img src="/frontend/images/meditation_7145145.png" alt="Ícone de calendário" class="img-fluid icones">
+            </button>
+            <label for="meditationButton">Dicas de vida saudável</label>
+          </div>
+
+          <div class="buttons">
+            <button type="button" id="partnershipButton" data-toggle="modal" data-target="#modalThree">
+              <img src="/frontend/images/aperto-de-mao.png" alt="Ícone de aperto de mãos" class="img-fluid icones">
+            </button>
+            <label for="partnershipButton">Parceiros</label>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>&copy;2024 - Hotsite</footer>
+  </div>
+  <!-- ==============================================MODAIS================================================== -->
+
+  <div class="modal fade" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Agenda</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2>30/04/2024 - Evento 1</h2>
+          <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consectetur, vitae,
+            suscipit accusamus sapiente, fugit dignissimos quibusdam quo rerum debitis architecto nobis omnis eaque! Cum
+            nemo sit exercitationem placeat ratione!</div><br>
+          <h2>30/04/2024 - Evento 2</h2>
+          <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consectetur, vitae,
+            suscipit accusamus sapiente, fugit dignissimos quibusdam quo rerum debitis architecto nobis omnis eaque! Cum
+            nemo sit exercitationem placeat ratione!</div><br>
+          <h2>30/04/2024 - Evento 3</h2>
+          <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consectetur, vitae,
+            suscipit accusamus sapiente, fugit dignissimos quibusdam quo rerum debitis architecto nobis omnis eaque! Cum
+            nemo sit exercitationem placeat ratione!</div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Dicas de Vida Saudável</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolores. Nulla iste ducimus
+            accusantium, atque aut unde nisi error inventore eum fugit aliquid culpa voluptates autem dolores
+            consequuntur provident repellat!</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae amet modi voluptates necessitatibus
+            est eaque veniam quos cum architecto. Qui consequatur id labore? Nesciunt officia consectetur ex culpa
+            beatae?</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsum quisquam et nesciunt corrupti officia
+            iste maxime nisi fuga dolorum! Expedita voluptate autem distinctio voluptatibus tenetur, dolor at mollitia
+            quisquam!</p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalThree" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Parceiros</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body partners">
+          <div class="partners-content">
+            <img src="./images/aperto-de-mao.png" alt="" class="iconeParceiro">
+            <div class="partners-text">
+              <h2>Empresa 1</h2>
+              <p>Descrição</p>
+            </div>
+          </div>
+          <div class="partners-content">
+            <img src="./images/aperto-de-mao.png" alt="" class="iconeParceiro">
+            <div class="partners-text">
+              <h2>Empresa 1</h2>
+              <p>Descrição</p>
+            </div>
+          </div>
+          <div class="partners-content">
+            <img src="./images/aperto-de-mao.png" alt="" class="iconeParceiro">
+            <div class="partners-text">
+              <h2>Empresa 1</h2>
+              <p>Descrição</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script type="module" src="/frontend/javascript/api.js"></script>
+</body>
+
+</html>
