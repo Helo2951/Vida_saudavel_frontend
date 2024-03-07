@@ -34,4 +34,6 @@ export async function sendDataToServer(e) {
     }).catch((error) => {
         console.error('Erro ao enviar os dados: ', error)
     })
+    location.reload()
 }
+
