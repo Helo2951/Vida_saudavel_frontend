@@ -18,7 +18,7 @@ export async function sendDataToServer(e) {
         message,
     }
 
-    await fetch(`http://localhost:3333/clients`, {
+    await fetch("https://vida-saudavel-api.onrender.com/clients", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
